@@ -17,9 +17,15 @@ function addTask()
             let Cross = document.createElement("button")
             Cross.innerHTML = "Delete";
             Cross.classList.add("Dlbutton");
+
+             Cross.addEventListener("click", function () {
+             output.removeChild(li);
+              });
+
+
+
+            
             li.appendChild(Cross) ;
-
-
             output.appendChild(li)
             input.value = "";
 

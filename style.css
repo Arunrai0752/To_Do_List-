@@ -81,22 +81,28 @@
 .container2
 {
     position: relative;
+    overflow-x: auto;
     line-height: 30px;
     justify-content: space-around;
     align-items: center;
     display: flex;
     top: 150px;
-    right: 270px;
-
+    right: 50px;
 }
 
-
-.container2 li
-{
-   height: auto;
-   width: 100%;
-   border: 2px solid rgb(0, 255, 4);
-   border-radius: 10%;
+.container2 li {
+    min-width: 300px; 
+    max-width: 600px; 
+    word-wrap: break-word; 
+    white-space: normal; 
+    padding: 10px; 
+    margin: 10px;
+    position: relative;
+    left: 10px;
+    border: 2px solid rgb(0, 255, 4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: white;
 }
 
 .Dlbutton
